@@ -1,5 +1,18 @@
-<?php
-    session_start();
+<?php 
+  session_start();
 
-    echo "Le joueur {$_POST['joueur']} a joué dans la colonne {$_POST['colonne']}";
+  // Initialisation du jeu 
+
+  $_SESSION['board'] = [
+    [null,null,null,null,null,null],
+    [null,null,null,null,null,null],
+    [null,null,null,null,null,null],
+    [null,null,null,null,null,null],
+    [null,null,null,null,null,null],
+    [null,null,null,null,null,null]
+  ];
+
+
+
+  require_once("grid.php");
 ?>

@@ -1,6 +1,6 @@
 td,
 tr {
-  border: 3px solid azure;
+  border: 3px solid black;
   height: 75px;
   width: 75px;
 }
@@ -9,14 +9,14 @@ tr {
   background-color: red;
 }
 
-.j2{
+.j2 {
   background-color: yellow;
 }
 
 caption {
   padding: 50px;
   caption-side: bottom;
-  color: azure;
+  color: black;
 }
 
 table {
@@ -29,6 +29,19 @@ table {
 
 body {
   display: flex;
-  justify-content: center;
-  background-color: black;
+  justify-content: space-evenly;
+  background-color: azure;
+  margin-top: 50px;
+}
+
+select {
+  font-size: 0.9rem;
+  padding: 2px 5px;
+  display: flex;
+}
+
+label {
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding-right: 10px;
 }

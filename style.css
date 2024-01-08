@@ -1,20 +1,22 @@
 td,
-th {
-  border: 3px solid black;
-  
-}
-th{
-    height: 100px;
-    width: 100px;
+tr {
+  border: 3px solid azure;
+  height: 75px;
+  width: 75px;
 }
 
-td {
-  text-align: center;
+.j1 {
+  background-color: red;
+}
+
+.j2{
+  background-color: yellow;
 }
 
 caption {
   padding: 50px;
   caption-side: bottom;
+  color: azure;
 }
 
 table {
@@ -28,4 +30,5 @@ table {
 body {
   display: flex;
   justify-content: center;
+  background-color: black;
 }

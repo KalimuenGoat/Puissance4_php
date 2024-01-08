@@ -8,7 +8,7 @@
   </head>
   <body>
     <section>
-      <label for="pet-select">Player 1, please choose a column</label>
+      <label for="player1select">Player 1, please choose a column</label>
       <select name="columnplayer1" id="columnselect1">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -38,7 +38,7 @@
       ?>
     </table>
     <section>
-      <label for="pet-select">Player 2, please choose a column</label>
+      <label for="player2select">Player 2, please choose a column</label>
       <select name="columnplayer1" id="columnselect2">
         <option value="1">1</option>
         <option value="2">2</option>

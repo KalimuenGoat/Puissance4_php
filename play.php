@@ -13,6 +13,16 @@ function turn(int $joueur, int $colonne)
 
 turn((int) $_POST['joueur'], (int) $_POST['colonne']);
 
+function draw(){
+  $i = 0;
+  while ($i++ , i< 7){
+    $j = ($_SESSION['board'][$i][$i]); 
+    if ($j != null) {
+      echo "Egalité"
+    }
+  }
+}
+
 //affichage de la grille
 require_once("grid.php");
 ?>

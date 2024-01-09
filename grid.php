@@ -30,7 +30,6 @@
       Puissance 4
     </caption>
     <?php
-    //var_dump($_SESSION['board']);
     for ($i = 0; $i < 6; $i++) {
       echo "<tr>";
       for ($j = 0; $j < 7; $j++) {
@@ -61,6 +60,11 @@
         <option value="6">7</option>
       </select>
       <input type="submit" name="jouer" value="Jouer">
+    </form>
+  </section>
+  <section>
+    <form action="index.php" method="post">
+      <input type="submit" name="jouer" value="Restart">
     </form>
   </section>
 </body>

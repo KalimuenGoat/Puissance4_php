@@ -33,13 +33,19 @@
     for ($i = 0; $i < 6; $i++) {
       echo "<tr>";
       for ($j = 0; $j < 7; $j++) {
-        if ($i % 2 == 0) {
-          echo "<td class='j1'></td>";
-        } else {
-          echo "<td class='j2'></td>";
-        }
+        echo "<td>";
+        // if ($i % 2 == 0) {
+        //   echo "<td class='j1'></td>";
+        // } else {
+        //   echo "<td class='j2'></td>";
+        // }
       }
       echo "</tr>";
+    }
+    if ($_SESSION['board'][$colonne][$j] = "j1") {
+      echo "<td class='j1'></td>";
+    } else {
+      echo "<td class='j2'></td>";
     }
     ?>
   </table>
@@ -60,4 +66,5 @@
     </form>
   </section>
 </body>
+
 </html>

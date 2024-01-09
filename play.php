@@ -1,18 +1,17 @@
-<?php 
-  session_start();
+<?php
+session_start();
 
-  // Initialisation du jeu 
+// echo "Le joueur {$_POST['joueur']} a joué dans la colonne {$_POST['colonne']}";
+function turn(int $joueur, int $colonne){
+  $i = 0;
+  while (!is_null($_SESSION['board'][$colonne][$i])){
+    $i++;
+  }
+  $_SESSION['board'][$colonne][$i] = $joueur;
+}
 
-  $_SESSION['board'] = [
-    [null,null,null,null,null,null],
-    [null,null,null,null,null,null],
-    [null,null,null,null,null,null],
-    [null,null,null,null,null,null],
-    [null,null,null,null,null,null],
-    [null,null,null,null,null,null]
-  ];
+turn($_POST['joueur'], $_POST['colonne']);
 
-
-
-  require_once("grid.php");
+//affichage de la grille
+require_once("grid.php");
 ?>

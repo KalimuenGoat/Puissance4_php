@@ -11,16 +11,16 @@
 <body>
   <section>
     <form action="play.php" method="post">
-      <input type="hidden" name="joueur" value="j1">
+      <input type="hidden" name="joueur" value="1">
       <label for="player1select">Player 1, please choose a column</label>
       <select name="colonne" id="columnselect1">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
+        <option value="0">1</option>
+        <option value="1">2</option>
+        <option value="2">3</option>
+        <option value="3">4</option>
+        <option value="4">5</option>
+        <option value="5">6</option>
+        <option value="6">7</option>
       </select>
       <input type="submit" name="jouer" value="Jouer">
     </form>
@@ -30,37 +30,35 @@
       Puissance 4
     </caption>
     <?php
+    //var_dump($_SESSION['board']);
     for ($i = 0; $i < 6; $i++) {
       echo "<tr>";
       for ($j = 0; $j < 7; $j++) {
-        echo "<td>";
-        // if ($i % 2 == 0) {
-        //   echo "<td class='j1'></td>";
-        // } else {
-        //   echo "<td class='j2'></td>";
-        // }
+        $k = 5 - $i;
+        if ($_SESSION['board'][$j][$k] == "1") {
+          echo "<td class='j1'></td>";
+        } else if ($_SESSION['board'][$j][$k] == "2") {
+          echo "<td class='j2'></td>";
+        } else {
+          echo "<td class='vide'></td>";
+        }
       }
       echo "</tr>";
-    }
-    if ($_SESSION['board'][$colonne][$j] = "j1") {
-      echo "<td class='j1'></td>";
-    } else {
-      echo "<td class='j2'></td>";
     }
     ?>
   </table>
   <section>
     <form action="play.php" method="post">
-      <input type="hidden" name="joueur" value="j2">
+      <input type="hidden" name="joueur" value="2">
       <label for="player1select">Player 2, please choose a column</label>
       <select name="colonne" id="columnselect1">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
+        <option value="0">1</option>
+        <option value="1">2</option>
+        <option value="2">3</option>
+        <option value="3">4</option>
+        <option value="4">5</option>
+        <option value="5">6</option>
+        <option value="6">7</option>
       </select>
       <input type="submit" name="jouer" value="Jouer">
     </form>

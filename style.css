@@ -13,6 +13,10 @@ tr {
   background-color: yellow;
 }
 
+.vide {
+  background-color: azure;
+}
+
 caption {
   padding: 50px;
   caption-side: bottom;

@@ -66,6 +66,7 @@
     <form action="index.php" method="post">
       <input type="submit" name="jouer" value="Restart">
     </form>
+    <button class="save" type="button">Save</button>
   </section>
 </body>
 
